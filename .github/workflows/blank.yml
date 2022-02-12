@@ -22,4 +22,4 @@ jobs:
       - name: Upload
         uses: actions/upload-artifact@v2
         with:
-          path: ./WEB101.pdf
+          path: ./web101.pdf
