@@ -16,7 +16,7 @@ jobs:
       - name: First compilation
         uses: dante-ev/latex-action@2021-A
         with:
-          root_file: main.tex
+          root_file: web101.tex
           compiler: lualatex
           args: -shell-escape
 
@@ -26,14 +26,14 @@ jobs:
       - name: Second compilation
         uses: dante-ev/latex-action@2021-A
         with:
-          root_file: main.tex
+          root_file: web101.tex
           compiler: lualatex
           args: -shell-escape
 
       - name: Third compilation
         uses: dante-ev/latex-action@2021-A
         with:
-          root_file: main.tex
+          root_file: web101.tex
           compiler: lualatex
           args: -shell-escape
 
