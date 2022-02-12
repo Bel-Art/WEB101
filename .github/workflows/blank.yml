@@ -20,6 +20,8 @@ jobs:
           compiler: lualatex
           args: -shell-escape
 
+      - name: bibtex install
+        run: sudo apt install bibtex
       - name: bibtex
         run: bibtex web101.aux
 
