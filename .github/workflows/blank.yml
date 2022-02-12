@@ -13,32 +13,12 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
 
-      - name: bibtex install
-        run: sudo apt install biblatex
       - name: First compilation
         uses: dante-ev/latex-action@2021-A
         with:
           root_file: web101.tex
           compiler: lualatex
           args: -shell-escape
-
-      - name: bibtex
-        run: bibtex web101.aux
-
-      - name: Second compilation
-        uses: dante-ev/latex-action@2021-A
-        with:
-          root_file: web101.tex
-          compiler: lualatex
-          args: -shell-escape
-
-      - name: Third compilation
-        uses: dante-ev/latex-action@2021-A
-        with:
-          root_file: web101.tex
-          compiler: lualatex
-          args: -shell-escape
-
       - name: Upload
         uses: actions/upload-artifact@v2
         with:
