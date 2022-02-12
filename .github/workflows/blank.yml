@@ -21,7 +21,7 @@ jobs:
           args: -shell-escape
 
       - name: bibtex install
-        run: sudo apt install bibtex
+        run: sudo apt install biblatex
       - name: bibtex
         run: bibtex web101.aux
 
